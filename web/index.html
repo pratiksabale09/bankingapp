@@ -21,6 +21,7 @@
   <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
+  <meta name="google-signin-client_id" content="472466071345-8c9n4pgpvqs8uuhufiu07070rq1684c4.apps.googleusercontent.com">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="bankingapp">
@@ -40,6 +41,35 @@
   <script src="flutter.js" defer></script>
 </head>
 <body>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-messaging.js"></script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+    
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBBm1z1N9Cy1CKtUsIt4mroyfrSz-ZaWR8",
+      authDomain: "money-transfer-85b76.firebaseapp.com",
+      projectId: "money-transfer-85b76",
+      storageBucket: "money-transfer-85b76.appspot.com",
+      messagingSenderId: "472466071345",
+      appId: "1:472466071345:web:76d8e3fbb2227c763f9a10",
+      measurementId: "G-R3K90VM73R"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
