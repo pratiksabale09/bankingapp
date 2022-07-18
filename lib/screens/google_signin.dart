@@ -10,7 +10,7 @@ import 'package:http/http.dart' as http;
 
 GoogleSignIn _googleSignIn = GoogleSignIn(
   // Optional clientId
-  //clientId: '513444415484-b8btjqvfk91nbjt014qiru5i8oeo0k43.apps.googleusercontent.com',
+  clientId: '513444415484-klv7msimfuarq6c73qc14ifvot5idt86.apps.googleusercontent.com',
   scopes: <String>[
     'email',
     'https://www.googleapis.com/auth/contacts.readonly',
