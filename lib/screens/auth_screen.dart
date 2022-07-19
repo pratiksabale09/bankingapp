@@ -24,6 +24,7 @@ class _AuthScreenState extends State<AuthScreen> {
       userCredential = await _auth.createUserWithEmailAndPassword(
           email: email, password: password);
     }
+    print(userCredential);
     } on PlatformException catch (err)
     {
       var message = 'An error occured please check message';
@@ -31,9 +32,10 @@ class _AuthScreenState extends State<AuthScreen> {
       {
         message = err.message!;
       }
-
+      
       Scaffold.of(context).showSnackBar(SnackBar(content: Text(message), backgroundColor: Theme.of(context).errorColor,),);
     }
+
   }
 
   @override
